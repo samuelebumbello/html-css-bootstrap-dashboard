@@ -3,7 +3,8 @@ body{
 }
 
 header{
-    position: sticky;
+    position: fixed;
+    z-index: 999;
     background-color: white;
     height: 70px;
 }
@@ -45,7 +46,30 @@ a{
 ***********************/
 
 .left-menu{
+    position: fixed;
+    margin-top: 70px;
     background-color: #051E34;
     width: 150px;
     height: 100vh;
+}
+
+@media screen and (max-width:992px){
+    .left-menu{
+        width: 75px;
+    }
+}
+
+/******************
+        MAIN
+*******************/
+
+main{
+    margin-left: 150px;
+    padding-top: 70px;
+    background-color: #1b70e844;
+}
+
+.main-menu{
+    height: 150px;
+    background-color:#1B72E8 ;
 }
